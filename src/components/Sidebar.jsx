@@ -84,12 +84,7 @@ const Sidebar = ({setListData}) => {
   }
 
 
-  //Hiding sidebar if device is of size medium(768) or less than mediun(768)
-  useEffect(()=>{
-      if(window.innerWidth < 768){
-        handleSidebarToggle();
-      }
-  },[handleSidebarToggle]);
+
 
 
 
