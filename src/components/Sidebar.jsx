@@ -89,7 +89,7 @@ const Sidebar = ({setListData}) => {
       if(window.innerWidth < 768){
         handleSidebarToggle();
       }
-  },[]);
+  },[handleSidebarToggle]);
 
 
 
@@ -139,7 +139,7 @@ if(!isSidebarOpen){
 
 
   return (
-    <div className='w-full bg-gray-200  fixed top-0 h-full overflow-y-auto  md:w-56  z-20  '>
+    <div className='w-full bg-gray-200  fixed top-0 h-full overflow-y-auto  md:w-56  z-20 '>
       <div>
         <div className='flex justify-between bg-white shadow-xl border-b border-b-gray-300  py-2 px-4 mb-4 mr-2'>
           <p>Filters</p>
